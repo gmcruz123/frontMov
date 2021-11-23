@@ -20,7 +20,6 @@ export class HeaderComponent implements OnInit {
   }
 
   search(){
-    console.log(this.searchText);
     this.eventSearch.emit(this.searchText);
   }
 }
