@@ -11,6 +11,7 @@ img {
 
 ::ng-deep .progress
 {
+  width:4.5rem;
   height: 4rem !important;
   background-color:transparent !important;
 }
@@ -18,5 +19,5 @@ img {
 #progress-circle {
   position: absolute;
   top: 15.5rem;
-  left:2rem;
+  right:1rem;
 }
