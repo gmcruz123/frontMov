@@ -1,0 +1,53 @@
+.container-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color:rgb(13, 23, 37);
+  align-items: center;
+  padding: 3rem 3rem;
+
+}
+img {
+  width: 24rem;
+  height: 80vh;
+  border-radius: 15px;
+
+}
+
+.container-detail {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 1rem 2rem;
+  overflow-y: hidden;
+  overflow-wrap: break-word;
+
+}
+
+::ng-deep .progress
+{
+  width:4.5rem;
+  height: 4rem !important;
+  background-color:transparent !important;
+}
+
+.progress-info {
+  margin: 3rem 0 3rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.puntuacion {
+  margin: 1rem 1rem;
+  font-weight:bold;
+  font-size: 1.3rem;
+}
+
+#resume {
+  margin: 1.5rem 0;
+}
+
+.container-information {
+  overflow: hidden;
+  width:100%;
+}

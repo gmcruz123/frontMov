@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_URL: 'https://whispering-springs-44329.herokuapp.com/',
+  URL_IMAGES: 'https://www.themoviedb.org/t/p/w440_and_h660_face/'
 };
 
 /*

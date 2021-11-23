@@ -1,0 +1,21 @@
+.banner-container {
+  background-image: url('https://wallpaperaccess.com/full/2772776.jpg');
+  height:23rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  color:white;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size:4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}

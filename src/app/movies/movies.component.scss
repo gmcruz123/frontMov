@@ -1,0 +1,12 @@
+.container-movies {
+  display:inline-flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+.noItems {
+  height:25rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}

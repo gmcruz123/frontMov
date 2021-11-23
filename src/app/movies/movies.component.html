@@ -1,0 +1,12 @@
+<app-header (eventCategory)="changeCategory($event)" (eventSearch)="search($event)"></app-header>
+<app-banner></app-banner>
+<div *ngIf="movies.length > 0; else noItems"></div>
+<div class="container-movies" *ngFor="let movie of movies">
+  <app-movie-card (clickOnCard)="clickOnCard(movie)" [item]="movie"></app-movie-card>
+
+</div>
+<ng-template #noItems>
+  <div class="noItems">
+  <h4 class="noItems">There're no items to see</h4>
+</div>
+</ng-template>

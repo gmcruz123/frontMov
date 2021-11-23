@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="container-main">
+    <div class="container-img">
+      <img [src]="(movie.poster_path ? url_images +  movie.poster_path:'https://cloudfront-us-east-1.images.arcpublishing.com/abccolor/46SQX65DUVCZ5M3D6UUT5DNDSI.jpg')" alt="" />
+    </div>
+    <div
+      class="container-detail"
+      [ngStyle]="{
+
+        'background-image':'linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7)), url(' +
+        (movie.poster_path ? url_images +  movie.poster_path:'https://cloudfront-us-east-1.images.arcpublishing.com/abccolor/46SQX65DUVCZ5M3D6UUT5DNDSI.jpg')+
+        ')',
+        'background-position': 'center',
+        'background-repeat': 'no-repeat',
+        'background-size': 'cover'
+      }"
+    >
+      <div class="container-information pt-3">
+        <h1>{{ movie.title }}</h1>
+        <h5>{{ movie.status }} . {{ " " + movie.runtime + ' min' }}</h5>
+        <div class="progress-info">
+          <circle-progress
+            id="progress-circle"
+            class="progress"
+            [titleFontSize]="'60'"
+            [showSubtitle]="false"
+            [showUnits]="true"
+            [units]="'%'"
+            [unitsFontSize]="'40'"
+            [unitsColor]="'#FFFFFF'"
+            [percent]="10*movie.vote_average"
+            [radius]="100"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+          ></circle-progress>
+          <p class="puntuacion">Puntuacion de usuario</p>
+         <!--  <span class="puntuacion"><i class="fas fa-play"></i> Reproducir Thriller
+          </span> -->
+        </div>
+
+        <p>{{movie.tagline}}</p>
+        <h4>Vista general</h4>
+        <h5 class="mt-4">{{ movie.overview }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
